@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+:root {
+  --color-bg: rgba(30, 37, 51, 0.5);
+  --color-bg2: rgba(30, 37, 51, 0.253);
+  --color-border: rgb(70, 70, 70);
+  --color-border-light: rgba(34, 34, 34, 1);
+  --color-overlay-bg: rgba(255, 255, 255, 0.3);
+  --color-overlay-text: #000;
+  --color-text: #dedbfd;
+}
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+  background-image: url(../img/pexels-andreas-schnabl-1775843-19487036.jpg); 
+  background-size: cover;     
+  background-position: center; 
+    font-family: "Orbitron", sans-serif;
+}
+
+.header img {
+  width: 48px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+   .header__kontakt {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+.form__input, .form__textarea {
+  background-color: var(--color-bg2);
+  color: var(--color-text);
+}
+
+.footer {
+    margin-top: auto;
+  }
+
+.header, .footer {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.header__kontakt,
+.header__domov,
+.header__portfolio,
+.header__zivotopis {
+  text-decoration: none;
+  color: var(--color-text);
+  margin: 10px;
+}
+
+.header__kontakt {
+  text-decoration: underline;
+}
+
+.form {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  width: 400px;
+  background-color: var(--color-bg2);
+  border: 2px solid var(--color-border-light);
+  border-radius: 8px;
+}
+
+.form__container {
+  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+}
+
+
+
+.form__input {
+  border: 2px solid var(--color-border-light);
+  border-radius: 4px;
+  height: 25px;
+}
+
+.form__textarea {
+  height: 150px;
+  resize: none;
+  border: 2px solid var(--color-border-light);
+  border-radius: 4px;
+}
+
+.form__button {
+  background-color: var(--color-text);  
+  border-radius: 12px;
+  height: 35px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px var(--color-border-faint);
+  cursor: pointer;
+}
+
+.form__button:hover {
+  background-color: var(--color-bg2);   
+}
+
+.footer {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  margin-top: auto;
+  padding: 1rem 0;
+}
+.footer__email,
+.footer__author {
+  margin: 0.5rem 0;
+  color: var(--color-text);
+}
+.footer__line {
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  width: 98%;
+  margin: 0.5rem auto;
+}
+.footer__line2 {
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  width: 28%;
+  margin: 0.5rem auto;
+}
+
+@media (max-width: 767px) {
+  .header, .footer {
+    background-color: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .header__kontakt {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .socials {
+    display: none;
+  }
+
+  .form {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .form {
+    width: 500px;
+  }
+
+  .footer__line {
+    width: 98%;
+  }
+}

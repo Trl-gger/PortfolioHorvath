@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+:root {
+  --color-bg: rgba(30, 37, 51, 0.5);
+  --color-border: rgb(70, 70, 70);
+  --color-border-light: rgba(34, 34, 34, 1);
+  --color-overlay-bg: rgba(255, 255, 255, 0.3);
+  --color-overlay-text: #000;
+  --color-text: #d8d8ff;
+  --color-text2: #000000;
+}
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+  background-image: url(../img/pexels-andreas-schnabl-1775843-19487036.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+.footer__line {
+  border: var(--color-border) solid 1px;
+  border-radius: 5px;
+  width: 98%;
+  margin: 0.5rem auto;
+}
+
+.header__domov {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+h1 {
+  color: var(--color-text2);
+  text-decoration: underline 2px;
+  text-underline-offset: 10px;
+}
+
+h2 {  
+  text-align: center;
+}
+
+main {
+  margin-top: 25px;
+}
+
+main hr{
+    border: var(--color-border) solid 1px;
+  border-radius: 5px;
+  width: 28%;
+  margin: 0.5rem auto;
+}
+
+.intro__name {
+  text-align: center;
+  font-size: 6.25rem;
+  font-weight: bold;
+  margin-top: 60px;
+  letter-spacing: 2px;
+}
+
+.intro__text {
+  color: var(--color-text2);
+  text-align: center;
+  max-width: 1120px;
+  font-weight: 480;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  margin-top: -70px;
+}
+
+
+.intro__text hr{
+  border: var(--color-border) solid 1px;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0.5rem auto;
+}
+
+.header img {
+  width: 48px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+.projekty {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.projekty a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  background: rgba(4, 10, 22, 0.226);
+  border-radius: 10px;
+  padding: 18px 24px;
+  transition: transform 0.15s;
+}
+
+.projekty a:hover {
+  transform: translateY(-4px) scale(1.04);
+  background: rgba(0, 0, 0, 0.445);
+}
+
+.projekty img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  header, footer {
+    background-color: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  p {
+    width: 90%;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+    margin: 10px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .intro__name {
+    font-size: 2.8rem;
+  }
+
+  .intro__text{
+    margin-top: -22px;
+  }
+
+  
+}
+
+@media (min-width: 768px) {
+  
+  header, footer {
+    background-color: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .text2 {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+    margin: 10px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+
