@@ -99,12 +99,12 @@ html, body {
     font-size: 0.9rem;
   }
 
-  .gallery{
-     display: flex;
+  .gallery {
+  display: flex;
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  }
+}
 
 .header img {
   width: 48px;
@@ -174,9 +174,9 @@ html, body {
   }
 
   .gallery img {
-    width: 90vw;       
-    max-width: 400px;   
-    height: auto;       
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
     object-fit: cover;
     border-radius: 4px;
   }
