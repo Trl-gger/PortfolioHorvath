@@ -14,10 +14,9 @@
   <a href="./--dark_domov.html" class="header__domov">Domov</a>
   <a href="./assets/cv/Šimon Horváth - Životopis.pdf" class="header__zivotopis">Životopis</a>
 </header>
-
 <main class="main">
   <div class="form">
-    <form>
+    <form action="mailto:simonhorvath556@gmail.com?subject=Nová%20správa%20z%20formulára" method="post" enctype="text/plain">
       <div class="form__container">
         <label for="meno" class="form__label">Name</label>
         <input type="text" id="meno" name="meno" class="form__input" />
@@ -26,7 +25,7 @@
         <input type="text" id="priezvisko" name="priezvisko" class="form__input" />
 
         <label for="mail" class="form__label">E-mail</label>
-        <input type="text" id="mail" name="mail" class="form__input" />
+        <input type="email" id="mail" name="mail" class="form__input" />
 
         <label for="message" class="form__label">Správa</label>
         <textarea id="message" name="message" class="form__textarea"></textarea>
@@ -36,14 +35,13 @@
     </form>
   </div>
 </main>
-</div>
-
-<footer class="footer">
-  <div class="footer__content">
+<footer>
+  <footer>
     <p class="footer__email">simonhorvath556@gmail.com</p>
-    <hr class="footer__line" />
-    <p class="footer__author">By Šimon Horváth</p>
-  </div>
+      <hr class="footer__line" />
+    <p class="footer__credit">By Šimon Horváth</p>
+  </footer>
 </footer>
 </body>
 </html>
+

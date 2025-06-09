@@ -9,6 +9,11 @@
   --color-text: #dedbfd;
 }
 
+main {
+  flex: 1;
+}
+
+
 html, body {
   min-height: 100vh;
   margin: 0;
@@ -20,12 +25,15 @@ html, body {
   background-position: center; 
     font-family: "Orbitron", sans-serif;
 }
+  header, footer {
+    background-color: var(--color-bg);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
 
-header, footer {
-  background-color: var(--color-bg);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-}
+  footer{
+    text-align: center;
+  }
 
 .header img {
   width: 48px;
@@ -43,12 +51,6 @@ header, footer {
   color: var(--color-text);
 }
 
-.footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
 
 .header, .footer {
   background-color: var(--color-bg);
@@ -127,14 +129,6 @@ header, footer {
   background-color: var(--color-bg2);   
 }
 
-.footer {
-  background-color: var(--color-bg);
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-  text-align: center;
-  margin-top: auto;
-  padding: 1rem 0;
-}
 .footer__email,
 .footer__author {
   margin: 0.5rem 0;
@@ -172,7 +166,8 @@ header, footer {
   .form {
     width: 400px;
   }
-}
+  }
+
 
 @media (min-width: 768px) {
   .socials {
