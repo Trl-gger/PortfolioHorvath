@@ -21,6 +21,12 @@ html, body {
     font-family: "Orbitron", sans-serif;
 }
 
+header, footer {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
 .header img {
   width: 48px;
   position: absolute;
@@ -39,6 +45,9 @@ html, body {
 
 .footer {
     margin-top: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
 .header, .footer {
