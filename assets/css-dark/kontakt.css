@@ -110,9 +110,9 @@ html, body {
   width: 88%;
   margin-left: auto;
   margin-right: auto;
-  border: solid 2px var(--color-border-faint);
+  border: solid 2px var(--color-border-light);
   cursor: pointer;
-}
+} 
 
 .form__button:hover {
   background-color: var(--color-bg2);   
@@ -156,12 +156,14 @@ html, body {
     text-underline-offset: 4px;
   }
 
+
+
   .socials {
     display: none;
   }
 
   .form {
-    width: 400px;
+    width: 90%;
   }
 }
 

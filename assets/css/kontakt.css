@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 :root {
   --color-bg: rgba(122, 122, 85, 0.342);
-  --color-bg2: rgba(30, 37, 51, 0.219);
+    --color-bg2: rgba(30, 37, 51, 0.253);
   --color-border: rgb(189, 187, 187);
   --color-border-light: rgba(217, 217, 217, 1);
   --color-overlay-bg: rgba(0, 0, 0, 0.5);
   --color-overlay-text: #fff;
-  --color-text: rgb(249, 255, 234);
+  --color-text: rgb(251, 255, 198);
+  --color-text2: rgb(255, 255, 255);
+  --color-hr: rgb(0, 0, 0);
 }
 
 .header, .footer {
@@ -104,7 +106,7 @@ html, body {
   width: 88%;
   margin-left: auto;
   margin-right: auto;
-  border: solid 2px var(--color-border-faint);
+  border: solid 2px var(--color-border-light);
   cursor: pointer;
 }
 
@@ -150,8 +152,8 @@ html, body {
   p {
     width: 90%;
   }
-  .form {
-    width: 400px;
+   .form {
+    width: 90%;
   }
   .footer {
     text-align: center;

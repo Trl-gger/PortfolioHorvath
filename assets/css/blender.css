@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-
 :root {
   --color-bg: rgba(122, 122, 85, 0.342);
   --color-border: rgb(189, 187, 187);
   --color-border-light: rgba(217, 217, 217, 1);
   --color-overlay-bg: rgba(0, 0, 0, 0.5);
   --color-overlay-text: #fff;
-  --color-text: rgb(248, 246, 227);
+  --color-text: rgb(251, 255, 198);
+  --color-text2: rgb(255, 255, 255);
+  --color-hr: rgb(0, 0, 0);
 }
 
 
