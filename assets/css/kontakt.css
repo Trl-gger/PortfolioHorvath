@@ -11,11 +11,14 @@
   --color-hr: rgb(0, 0, 0);
 }
 
+main {
+  flex: 1;
+}
+
 .header, .footer {
   background-color: var(--color-bg);
   border: 2px solid var(--color-border);
 }
-
 
 html, body {
   min-height: 100vh;
@@ -40,6 +43,20 @@ html, body {
   top: 1px;
   left: 0;
 }
+
+header, footer {
+  background-color: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+footer{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 
 .gallery h1 {
   color: var(--color-overlay-text);
@@ -128,11 +145,12 @@ html, body {
   margin: 0.5rem 0;
   color: var(--color-text);
 }
-.footer__line {
-  border: 1px solid var(--color-border);
+
+.footer__line{
+  border: var(--color-border) solid 1px;
   border-radius: 5px;
   width: 98%;
-  margin: 0.5rem auto;
+  margin: 1vh auto;
 }
 .footer__line2 {
   border: 1px solid var(--color-border);
@@ -176,3 +194,4 @@ html, body {
     width: 98%;
   }
  }
+
